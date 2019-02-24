@@ -1,6 +1,7 @@
 package io.github.meness.simprintschallenges;
 
 import android.os.Build;
+import android.support.annotation.VisibleForTesting;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,6 +9,7 @@ import java.util.List;
 
 @SuppressWarnings("SpellCheckingInspection")
 class SimprintsChallengeThree {
+    @VisibleForTesting
     static int[] run(String[] strings) {
         List<Integer> valuesAsciiCodes = countAsciiCodes(strings);
         sort(valuesAsciiCodes, true);
